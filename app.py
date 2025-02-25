@@ -64,7 +64,7 @@ def page():
     st.subheader("Upload a document")
     st.file_uploader(
         "Upload document",
-        type=["pdf"],
+        type=["pdf","csv"],
         key="file_uploader",
         on_change=read_and_save_file,
         label_visibility="collapsed",
